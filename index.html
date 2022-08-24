@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
+  <title>Frontend Mentor | Interactive card details form</title>
+  
+  <script type="module" crossorigin src="./assets/index.15c621c6.js"></script>
+  <link rel="stylesheet" href="./assets/index.10fb215c.css">
+</head>
+<body>
+  <!-- <img src="./design/mobile-design.jpg" alt="" class="mocup-mobile"> -->
+  <!-- <img src="./design/desktop-design.jpg" alt="" class="mockup-desktop"> -->
+  <!-- <img src="./design/complete-state-mobile.jpg" alt="" class="mocup-mobile"> -->
+  <!-- <img src="./design/complete-state-desktop.jpg" alt="" class="mockup-desktop"> -->
+  <div class="container">
+    <div class="header-container">
+      <div class="card-back">
+        <div class="card-cvc">000</div>
+      </div>
+      <div class="card-front">
+        <div class="card-logo">
+          <img src="./assets/card-logo.c6566e76.svg" alt="">
+        </div>
+        <div class="card-number">0000 0000 0000 0000</div>
+        <div class="card-footer">
+          <div class="cardholder-name">Jane Appleseed</div>
+          <div class="card-valid-to"><span class="valid-to-month">00</span>/<span class="valid-to-year">00</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-container">
+      <form class="form" action="./" method="get" id="form">
+        <div class="form-element">
+          <label for="cardholderName">Cardholder Name</label>
+          <input type="text" class="input" placeholder="e.g. Jane Appleseed" name="cardholderName" id="cardholderName" autofocus>
+          <div class="error-message">Some message goes here!</div>
+        </div>
+        <div class="form-element">
+          <label for="cardNumber">Card Number</label>
+          <input type="text" class="input" placeholder="e.g. 1234 5678 9123 0000" name="cardNumber" id="cardNumber">
+          <div class="error-message">Some message goes here!</div>
+        </div>
+        <div class="form-element">
+          <div class="form-footer-wrapper">
+            <div class="footer-element">
+              <label for="expMonth">Exp. Date</label>
+              <input type="text" maxlength="2" class="input" placeholder="MM" name="expMonth" id="expMonth">
+            </div>
+            <div class="footer-element">
+              <label for="expYear">(MM/YY)</label>
+              <input type="text" maxlength="2" class="input" placeholder="YY" name="expYear" id="expYear">
+            </div>
+            <div class="footer-element">
+              <label for="cardCVC">CVC</label>
+              <input type="text" maxlength="3" class="input" placeholder="e.g. 123" name="cardCVC" id="cardCVC">
+            </div>
+          </div>
+          <div class="error-message">Some message goes here!</div>
+        </div>
+        <button type="submit" class="btn">Confirm</button>
+      </form>
+      <div class="state-container">
+        <div class="compleate-wrapper">
+          <img src="./assets/icon-complete.0e154f18.svg" alt="">
+        </div>
+        <h1>Thank You!</h1>
+        <p>We've added your card details</p>
+        <button class="btn">Continue</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

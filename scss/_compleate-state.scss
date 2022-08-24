@@ -1,0 +1,47 @@
+
+.form-container {
+
+    .state-container {
+        display: none;
+
+        .compleate-wrapper {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 35px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            letter-spacing: 2.7px;
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+
+        p {
+            margin-bottom: 37px;
+            color: $dark-grayish-violet;
+            opacity: 0.9;
+        }
+    }
+
+    &.success {
+        padding-top: 85px;
+
+        .state-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    .form-container {
+        &.success {
+            padding: 303px 226px 100px 348px;
+        }
+    }
+
+}

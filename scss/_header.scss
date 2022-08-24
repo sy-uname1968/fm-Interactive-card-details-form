@@ -1,0 +1,115 @@
+
+.header-container {
+    // opacity: 0.6;
+    background-image: url(../images/bg-main-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 245px;
+    position: relative;
+    width: 100%;
+}
+
+.card-back {
+    position: absolute;
+    width: 286px;
+    height: 159px;
+    top: 33px;
+    right: 17px;
+    z-index: 1;
+    background-image: url(../images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    div {
+        font-size: 0.5rem;
+        padding-left: 230px;
+        padding-top: 72px;
+        color: $white;
+        opacity: 0.6;
+    }
+}
+
+.card-front {
+    position: absolute;
+    width: 286px;
+    height: 159px;
+    z-index: 2;
+    top: 131px;
+    left: 17px;
+    background-image: url(../images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 19px 23px 19px 19px;
+
+    .card-logo {
+        height: 30px;
+        width: 55px;
+        margin-bottom: 37px;
+    }
+
+    .card-number {
+        letter-spacing: 2.2px;
+        color: $white;
+        opacity: 0.5;
+        margin-bottom: 17px;
+    }
+
+    .card-footer {
+        display: flex;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+        justify-content: space-between;
+        color: $white;
+        opacity: 0.5;
+    }
+}
+
+@media screen and (min-width:1440px){
+
+    .header-container {
+        height: 100%;
+        // height: 100vh;
+        width: 482px;
+        // width: 33.47%;
+        background-image: url(../images/bg-main-desktop.png);
+        // opacity: 0.6;
+
+        .card-back {
+            width: 448px;
+            height: 247px;
+            right: -45.85%;
+            top: 52.44%;
+
+            div {
+                font-size: 0.85rem;
+                padding-left: 365px;
+                padding-top: 112px;
+            }
+        }
+
+        .card-front {
+            width: 448px;
+            height: 247px;
+            left: 34.23%;
+            top: 21.11%;
+            padding: 25px 30px 19px 30px;
+
+            .card-logo {
+                height: 48px;
+                width: 88px;
+                margin-bottom: 66px;
+            }
+
+            .card-number {
+                letter-spacing: 4px;
+                font-size: 1.5rem;
+                margin-bottom: 19px;
+            }
+
+            .card-footer {
+                font-size: 1rem;
+            }
+        }
+    }
+    
+}
